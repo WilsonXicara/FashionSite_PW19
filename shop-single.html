@@ -23,10 +23,8 @@
     <link rel="stylesheet" href="css/global-styles.css">
 
   </head>
-  <body>
-
+  <body onload="cargarDatos()">
     <div class="site-wrap">
-
       <header class="site-navbar" role="banner">
         <div class="site-navbar-top">
           <div class="container">
@@ -99,15 +97,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
+              <img src="images/cloth_1.jpg" alt="Image" class="img-fluid" id="imagen_producto">
             </div>
             <div class="col-md-6">
-              <h2 class="text-black">Tank Top T-Shirt</h2>
-              <p>Una T-Shirt super ligera y comoda para la epoca de verano. Con
+              <h2 class="text-black" id="titulo_producto">Tank Top T-Shirt</h2>
+              <p id="descrip_producto">Una T-Shirt super ligera y comoda para la epoca de verano. Con
                 una resistencia sin igual elaborada con un material que resbala
                 el sudor y no es absorvido por la prenda.</p>
-              <p class="mb-4">Ideal para la playa y para correr.</p>
-              <p><strong class="text-primary h4">$50.00</strong></p>
+              <p class="mb-4" id="descrip2_producto">Ideal para la playa y para correr.</p>
+              <p><strong class="text-primary h4" id="precio_producto">$50.00</strong></p>
               <div class="mb-1 d-flex">
                 <label for="option-sm" class="d-flex mr-3 mb-3">
                   <span class="d-inline-block mr-2" style="top:-2px; position:
@@ -167,58 +165,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="nonloop-block-3 owl-carousel">
-                <div class="item">
-                  <div class="block-4 text-center">
-                    <figure class="block-4-image">
-                      <img src="images/cloth_1.jpg" alt="Image placeholder"
-                        class="img-fluid">
-                    </figure>
-                    <div class="block-4-text p-4">
-                      <h3><a href="#">Tank Top</a></h3>
-                      <p class="mb-0">La perfecta t-shirt</p>
-                      <p class="text-primary font-weight-bold">$50</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="block-4 text-center">
-                    <figure class="block-4-image">
-                      <img src="images/shoe_1.jpg" alt="Image placeholder"
-                        class="img-fluid">
-                    </figure>
-                    <div class="block-4-text p-4">
-                      <h3><a href="#">Zapatillas Navy</a></h3>
-                      <p class="mb-0">Comodas zapatillas</p>
-                      <p class="text-primary font-weight-bold">$50</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="block-4 text-center">
-                    <figure class="block-4-image">
-                      <img src="images/cloth_2.jpg" alt="Image placeholder"
-                        class="img-fluid">
-                    </figure>
-                    <div class="block-4-text p-4">
-                      <h3><a href="#">Polo Shirt</a></h3>
-                      <p class="mb-0">Camisa casual y a la moda</p>
-                      <p class="text-primary font-weight-bold">$50</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="block-4 text-center">
-                    <figure class="block-4-image">
-                      <img src="images/cloth_3.jpg" alt="Image placeholder"
-                        class="img-fluid">
-                    </figure>
-                    <div class="block-4-text p-4">
-                      <h3><a href="#">T-Shirt Mockup</a></h3>
-                      <p class="mb-0">Fresca y duradera</p>
-                      <p class="text-primary font-weight-bold">$50</p>
-                    </div>
-                  </div>
-                </div>
+                <div id="carusel"></div>
               </div>
             </div>
           </div>
@@ -246,6 +193,70 @@
       </footer>
 
     </div>
+    <script type="text/javascript">
+      function cargarDatos() {
+        var i = obtenerRuta('id') -1;
+        $.getJSON("ropa.json", function(json) {
+          console.log(json[i]);
+          document.getElementById("titulo_producto").innerHTML = json[i].nombre;
+          document.getElementById("descrip_producto").innerHTML = json[i].descrip;
+          document.getElementById("descrip2_producto").innerHTML = json[i].descrip2;
+          document.getElementById("precio_producto").innerHTML = json[i].precio;
+          document.getElementById("imagen_producto").src = json[i].url_foto;
+          cargarSugerencias(json);
+        });
+      }
+
+      function cargarSugerencias(json) {
+        //document.getElementById("carusel").insertAdjacentHTML("beforeend","<h4>Elemento</h4>");
+        //document.getElementById("carusel").insertAdjacentHTML("beforeend","<h4>dfdfdf</h4>");
+        //document.getElementById("carusel").insertAdjacentHTML("beforeend","<h4>eehghghg</h4>");
+        for (var i in json) {
+          document.getElementById("carusel").insertAdjacentHTML("beforeend",'<div class="item">');
+            document.getElementById("carusel").insertAdjacentHTML("beforeend",'<div class="block-4 text-center">');
+              document.getElementById("carusel").insertAdjacentHTML("beforeend",'<figure class="block-4-image">');
+                document.getElementById("carusel").insertAdjacentHTML("beforeend",'<img src="' + json[i].url_foto + '" alt="Image placeholder" class="img-fluid">');
+              document.getElementById("carusel").insertAdjacentHTML("beforeend",'</figure>');
+              document.getElementById("carusel").insertAdjacentHTML("beforeend",'<div class="block-4-text p-4">');
+                document.getElementById("carusel").insertAdjacentHTML("beforeend",'<h3><a href="#">' + json[i].nombre + '</a></h3>');
+                document.getElementById("carusel").insertAdjacentHTML("beforeend",'<p class="mb-0">' + json[i].descrip2 + '</p>');
+                document.getElementById("carusel").insertAdjacentHTML("beforeend",'<p class="text-primary font-weight-bold">$' + json[i].precio + '</p>');
+              document.getElementById("carusel").insertAdjacentHTML("beforeend",'</div>');
+            document.getElementById("carusel").insertAdjacentHTML("beforeend",'</div>');
+          document.getElementById("carusel").insertAdjacentHTML("beforeend",'</div>');
+          console.log(i);
+        }
+        /*
+        for (var i in json) {
+          document.getElementById("carusel").innerHTML += '<div class="item">';
+            document.getElementById("carusel").innerHTML += '<div class="block-4 text-center">';
+              document.getElementById("carusel").innerHTML = '<figure class="block-4-image">';
+                //document.getElementById("carusel").innerHTML += '<img src=' + json[i].url_foto + 'alt="Image placeholder" class="img-fluid">';
+              document.getElementById("carusel").innerHTML += '</figure>';
+              document.getElementById("carusel").innerHTML += '<div class="block-4-text p-4">';
+                document.getElementById("carusel").innerHTML += '<h3><a href="#">' + json[i].nombre + '</a></h3>';
+                document.getElementById("carusel").innerHTML += '<p class="mb-0">' + json[i].descrip2 + '</p>';
+                document.getElementById("carusel").innerHTML += '<p class="text-primary font-weight-bold">$' + json[i].precio + '</p>';
+              document.getElementById("carusel").innerHTML += '</div>';
+            document.getElementById("carusel").innerHTML += '</div>';
+          document.getElementById("carusel").innerHTML += '</div>';
+          console.log(i);
+        }
+        */
+      }
+
+      function obtenerRuta(param) {
+        var URLactual = window.location;
+        var url_completa = URLactual.href;
+        var url_host = URLactual.origin;
+        var url_path = URLactual.pathname;
+        var parametro = url_completa.replace(url_host,"");
+        parametro = parametro.replace(url_path,"");
+        parametro = parametro.replace("#" + param + "=", "");
+        console.log(parametro);
+        return parametro;
+      }
+  </script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
