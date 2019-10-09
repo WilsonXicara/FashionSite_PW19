@@ -1,0 +1,50 @@
+[
+  {
+    "id" : 1,
+    "nombre" : "Zapatos Navy",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/shoe_1.jpg"
+  },
+  {
+    "id" : 2,
+    "nombre" : "Tank Top",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/hero_1.jpg"
+  },
+  {
+    "id" : 3,
+    "nombre" : "Tank Top",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/cloth_1.jpg"
+  },
+  {
+    "id" : 4,
+    "nombre" : "Tank Top",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/cloth_2.jpg"
+  },
+  {
+    "id" : 5,
+    "nombre" : "Tank Top",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/cloth_3.jpg"
+  },
+  {
+    "id" : 6,
+    "nombre" : "Tank Top",
+    "descrip" : "adfdfdf",
+    "descrip2" : "dfdf",
+    "precio" : 50,
+    "url_foto" : "images/cloth_1.jpg"
+  }
+]
