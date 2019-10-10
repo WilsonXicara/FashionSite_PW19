@@ -254,7 +254,7 @@
           </div>
           <div class="row mt-5">
             <div class="col-md-12" id="id_div">
-              <h4>dfdfdfdf</h4>
+              <h4></h4>
               <!--
               <div class="nonloop-block-3 owl-carousel" id="id_div">
                 <h4>sdsdsd</h4>
@@ -288,7 +288,7 @@
     <script type="text/javascript">
       function cargarDatos() {
         var i = obtenerRuta('id') -1;
-        $.getJSON("ropa.json", function(json) {
+        $.getJSON("assets/shop-single-data.json", function(json) {
           console.log(json[i]);
           document.getElementById("titulo_producto").innerHTML = json[i].nombre;
           document.getElementById("titulo_producto2").innerHTML = json[i].nombre;
@@ -306,6 +306,7 @@
         var porcion = "";
         var completo = "<div class='nonloop-block-3 owl-carousel'>";
         for (var i in json) {
+          console.log("entro");
           porcion = `
           <div class="item">
             <div class="block-4 text-center">
@@ -323,14 +324,14 @@
           completo = completo + porcion;
         }
         completo = completo + "</div>"
-        $('#id_div').html(completo);
-        //document.getElementById("id_div").innerHTML = porcion;
+        //$('#id_div').html(completo);
+        document.getElementById("id_div").innerHTML = completo;
         //document.getElementById("id_div").insertAdjacentHTML('afterend', porcion);
 
       }
 
       function cargarSugerencias(json) {
-        for (var i in json) {
+        for (var i=0; i < 6; i++) {
           console.log(i);
           document.getElementById("titulo_s" + (i)).innerHTML = json[i].nombre;
           document.getElementById("descrip_s" + (i)).innerHTML = json[i].descrip2;
