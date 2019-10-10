@@ -2,201 +2,105 @@
     {
       "id" : 1,
       "nombre" : "Zapatos Navy",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
+      "descrip" : "V-10 - VEGANO",
+      "descrip2" : "El modelo V-10 hecho de materiales ecológicos y sostenibles representa 10 ans d'amour.",
       "precio" : 50,
       "url_foto" : "images/shoe_1.jpg"
     },
     {
       "id" : 2,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/hero_1.jpg"
+      "nombre" : "NOVA BLANCO NEGRO",
+      "descrip" : "NOVA - VEGANO",
+      "descrip2" : "Parte superior de algodón orgánico. Logotipo V en estampado serigrafiado. Forro de algodón orgánico. Plantilla hecha de caucho salvaje y otros materiales sintéticos. Suela hecha de caucho salvaje de la selva amazónica (20%). Hecho en Brasil, en la región de Puerto alegre",
+      "precio" : 85,
+      "url_foto" : "images/men_zapatos_01.jpg"
     },
     {
       "id" : 3,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
+      "nombre" : "EMERAUDE BLANCO VEGANO NEGRO",
+      "descrip" : "V-10 - VEGANO",
+      "descrip2" : "El modelo V-10 hecho de materiales ecológicos y sostenibles representa 10 ans d'amour.",
+      "precio" : 125,
+      "url_foto" : "images/men_zapatos_02.jpg"
     },
     {
       "id" : 4,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_2.jpg"
+      "nombre" : "CONDOR MALLA GRENAT DAHLIA",
+      "descrip" : "CÓNDOR",
+      "descrip2" : "La primera zapatilla post-petrolera. Para tus entrenamientos diarios. El tamaño del Cóndor es ligeramente diferente, consulte la guía de tallas.",
+      "precio" : 130,
+      "url_foto" : "images/women_zapatos_01.jpg"
     },
     {
       "id" : 5,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_3.jpg"
+      "nombre" : "RORAIMA SUEDE OLIVE NEGRO SOLO SÓLIDO",
+      "descrip" : "RORAIMA ",
+      "descrip2" : "Parte superior de gamuza repelente al agua. Paneles hechos de gamuza repelente al agua. Logotipo V de goma",
+      "precio" : 165,
+      "url_foto" : "images/women_zapatos_02.jpg"
     },
     {
       "id" : 6,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
+      "nombre" : "ABRIGO CUADRADO MUJER BLOCKTECH",
+      "descrip" : "Protege de la lluvia y el viento mientras libera humedad, por lo que se siente muy cómodo. En un elegante patrón a cuadros",
+      "descrip2" : "El equipo de diseñadores en París, dirigido por Christophe Lemaire, creó una nueva colección de LifeWear utilizando telas y diseños innovadores que se sienten modernos. Funciones estándar repelentes al agua, transpirables y a prueba de viento. Se ha engarzado una cinta especial en las costuras para evitar la lluvia y el viento. Gabardina clásica con un diseño vintage. Abroche los botones adentro para levantar el collar.",
+      "precio" : 149.90,
+      "url_foto" : "images/women_blocktech_01.jpg"
     },
     {
       "id" : 7,
-      "nombre" : "Zapatos Navy",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/shoe_1.jpg"
+      "nombre" : "Pantalón jogging piqué",
+      "descrip" : "Pantalón negro",
+      "descrip2" : "Pantalón tipo jogging en algodón piqué con bolsillos y cintura con cordón",
+      "precio" : 229,
+      "url_foto" : "images/men_pantalon_01.jpg"
     },
     {
-      "id" : 8,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/hero_1.jpg"
+      "id": 8,
+      "nombre" : "Pantalón chino slim tailoring cuadros",
+      "descrip" : "sicko19 sickonineteen",
+      "descrip2" : "Pantalón chino slim tailoring, con estampado de cuadros en diferentes tonos, cintura con trabilla, cierre de cremallera y botón y confeccionado en tejido ligeramente elástico.",
+      "precio" : 290,
+      "url_foto" : "images/men_pantalon_02.jpg"
     },
     {
       "id" : 9,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
+      "nombre" : "Pantalón jogging rojo banda",
+      "descrip" : "Pantalón rojo",
+      "descrip2" : "Pantalón jogging en color rojo con banda lateral en contraste, bolsillos y cierre de cremallera y botón.",
+      "precio" : 249,
+      "url_foto" : "images/men_pantalon_03.jpg"
     },
     {
       "id" : 10,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_2.jpg"
+      "nombre" : "CONDOR MALLA GRENAT DAHLIA",
+      "descrip" : "CÓNDOR",
+      "descrip2" : "La primera zapatilla post-petrolera. Para tus entrenamientos diarios. El tamaño del Cóndor es ligeramente diferente, consulte la guía de tallas.",
+      "precio" : 130,
+      "url_foto" : "images/women_zapatos_01.jpg"
     },
     {
       "id" : 11,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_3.jpg"
+      "nombre" : "RORAIMA SUEDE OLIVE NEGRO SOLO SÓLIDO",
+      "descrip" : "RORAIMA ",
+      "descrip2" : "Parte superior de gamuza repelente al agua. Paneles hechos de gamuza repelente al agua. Logotipo V de goma",
+      "precio" : 165,
+      "url_foto" : "images/women_zapatos_02.jpg"
     },
     {
       "id" : 12,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
+      "nombre" : "ABRIGO CUADRADO MUJER BLOCKTECH",
+      "descrip" : "Protege de la lluvia y el viento mientras libera humedad, por lo que se siente muy cómodo. En un elegante patrón a cuadros",
+      "descrip2" : "El equipo de diseñadores en París, dirigido por Christophe Lemaire, creó una nueva colección de LifeWear utilizando telas y diseños innovadores que se sienten modernos. Funciones estándar repelentes al agua, transpirables y a prueba de viento. Se ha engarzado una cinta especial en las costuras para evitar la lluvia y el viento. Gabardina clásica con un diseño vintage. Abroche los botones adentro para levantar el collar.",
+      "precio" : 149.90,
+      "url_foto" : "images/women_blocktech_01.jpg"
     },
     {
       "id" : 13,
-      "nombre" : "Zapatos Navy",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/shoe_1.jpg"
-    },
-    {
-      "id" : 14,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/hero_1.jpg"
-    },
-    {
-      "id" : 15,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
-    },
-    {
-      "id" : 16,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_2.jpg"
-    },
-    {
-      "id" : 17,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_3.jpg"
-    },
-    {
-      "id" : 18,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
-    },
-    {
-      "id" : 19,
-      "nombre" : "Zapatos Navy",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/shoe_1.jpg"
-    },
-    {
-      "id" : 20,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/hero_1.jpg"
-    },
-    {
-      "id" : 21,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
-    },
-    {
-      "id" : 22,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_2.jpg"
-    },
-    {
-      "id" : 23,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_3.jpg"
-    },
-    {
-      "id" : 24,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
-    },
-    {
-      "id" : 25,
-      "nombre" : "Tank Top",
-      "descrip" : "adfdfdf",
-      "descrip2" : "dfdf",
-      "precio" : 50,
-      "url_foto" : "images/cloth_1.jpg"
+      "nombre" : "Pantalón jogging piqué",
+      "descrip" : "Pantalón negro",
+      "descrip2" : "Pantalón tipo jogging en algodón piqué con bolsillos y cintura con cordón",
+      "precio" : 229,
+      "url_foto" : "images/men_pantalon_01.jpg"
     }
   ]
