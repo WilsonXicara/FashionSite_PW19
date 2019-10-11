@@ -254,7 +254,7 @@
           </div>
           <div class="row mt-5">
             <div class="col-md-12" id="id_div">
-              <h4></h4>
+              <h4>dfdfdf</h4>
               <!--
               <div class="nonloop-block-3 owl-carousel" id="id_div">
                 <h4>sdsdsd</h4>
@@ -294,10 +294,10 @@
           document.getElementById("titulo_producto2").innerHTML = json[i].nombre;
           document.getElementById("descrip_producto").innerHTML = json[i].descrip;
           document.getElementById("descrip2_producto").innerHTML = json[i].descrip2;
-          document.getElementById("precio_producto").innerHTML = json[i].precio;
+          document.getElementById("precio_producto").innerHTML = '$ ' + json[i].precio;
           document.getElementById("imagen_producto").src = json[i].url_foto;
           //argarSugerencias(json);
-          cargarSugerencias(json);
+          //cargarSugerencias(json);
           cargar2(json);
         });
       }
@@ -316,7 +316,7 @@
               <div class="block-4-text p-4">
                 <h3><a href="#">${json[i].nombre}</a></h3>
                 <p class="mb-0">${json[i].descrip2}</p>
-                <p class="text-primary font-weight-bold">$${json[i].precio}</p>
+                <p class="text-primary font-weight-bold">Q ${json[i].precio}</p>
               </div>
             </div>
           </div>
@@ -324,8 +324,8 @@
           completo = completo + porcion;
         }
         completo = completo + "</div>"
-        //$('#id_div').html(completo);
-        document.getElementById("id_div").innerHTML = completo;
+        $('#id_div').html(completo);
+        //document.getElementById("id_div").innerHTML = completo;
         //document.getElementById("id_div").insertAdjacentHTML('afterend', porcion);
 
       }
@@ -335,7 +335,7 @@
           console.log(i);
           document.getElementById("titulo_s" + (i)).innerHTML = json[i].nombre;
           document.getElementById("descrip_s" + (i)).innerHTML = json[i].descrip2;
-          document.getElementById("precio_s" + (i)).innerHTML = json[i].precio;
+          document.getElementById("precio_s" + (i)).innerHTML = '$ ' + json[i].precio;
           document.getElementById("imagen_s" + (i)).src = json[i].url_foto;
         }
       }

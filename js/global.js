@@ -36,7 +36,7 @@ function cargarPaginaProductos(numero_pagina) {
             <div class="block-4-text p-4">
                 <h3><a href="shop-single.html#id=${objetoProducto.id}">${objetoProducto.nombre}</a></h3>
                 <p class="mb-0">${objetoProducto.descrip}</p>
-                <p class="text-primary font-weight-bold">$${objetoProducto.precio}</p>
+                <p class="text-primary font-weight-bold">$ ${objetoProducto.precio}</p>
             </div>
             </div>
         </div>
